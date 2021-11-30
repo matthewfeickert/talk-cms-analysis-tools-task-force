@@ -148,7 +148,7 @@ Mathematical grammar for a simultaneous fit with
 - First non-ROOT implementation of the HistFactory p.d.f. template
    - .width-40[[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1169739.svg)](https://doi.org/10.5281/zenodo.1169739)]
 - pure-Python library as second implementation of HistFactory
-  - [`$ pip install pyhf`](https://scikit-hep.org/pyhf/installation.html#install-from-pypi)
+  - [`$ python -m pip install pyhf`](https://scikit-hep.org/pyhf/installation.html#install-from-pypi)
   - No dependence on ROOT!
 ]
 .kol-1-2.center.width-80[
@@ -158,9 +158,9 @@ Mathematical grammar for a simultaneous fit with
 .kol-1-1[
 - Open source tool for all of HEP
    - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
-   - Used for reinterpretation in phenomenology paper (DOI: [10.1007/JHEP04(2019)144](https://inspirehep.net/record/1698425)) and `SModelS`
-   - Used in ATLAS SUSY, Exotics, and Top groups
+   - Used in ATLAS SUSY, Exotics, and Top groups in [18 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
    - Used by Belle II (DOI: [10.1103/PhysRevLett.127.181802](https://inspirehep.net/literature/1860766))
+   - Used for reinterpretation in phenomenology paper (DOI: [10.1007/JHEP04(2019)144](https://inspirehep.net/record/1698425)) and `SModelS` <br>(DOI: [10.1016/j.cpc.2021.107909](https://inspirehep.net/literature/1814793))
    - Keen to make a bridge to CMS!
 ]
 
