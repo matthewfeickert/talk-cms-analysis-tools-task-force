@@ -94,6 +94,11 @@ Provide constraints on models through setting best limits
 ]
 
 ---
+# HistFactory Model: Systematic uncertainties
+
+- Use Alex's slide as a guide https://indico.cern.ch/event/1076231/contributions/4560405/attachments/2338312/3986005/20211103_pyhf_cabinetry_AGC.pdf
+
+---
 # HistFactory Template
 
 $$
@@ -347,6 +352,21 @@ $$
 ]
 - Have produced three comparisons to published ATLAS likelihoods: [ATLAS-SUSY-2018-04](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-04/), [ATLAS-SUSY-2018-31](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-31/), [ATLAS-SUSY-2019-08](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2019-08/)
    - Compare simplified likelihood (bestSR) to full likelihood (`pyhf`) using `SModelS`
+
+---
+# Extending and visualization: cabinetry
+
+.kol-1-3[
+<br>
+- pyhf focuses on the modeling (library not a framework)
+- cabinetry designs & steers template profile likelihood fits
+- Uses pyhf as the inference engine
+- Provides common visualization for inference validation
+]
+.kol-2-3[
+.center.width-50[[![cabinetry_logo](figures/cabinetry_logo_small.png)](https://github.com/scikit-hep/cabinetry)]
+.center.width-100[[![cabinetry_plots](figures/cabinetry_plots.png)](https://indico.cern.ch/event/1056428/contributions/4523825/)]
+]
 
 ---
 # Core part of IRIS-HEP Analysis Systems pipeline
