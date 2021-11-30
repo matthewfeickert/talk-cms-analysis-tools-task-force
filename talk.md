@@ -24,7 +24,7 @@ December 1st, 2021
 ---
 # `pyhf` team
 
-<br><br>
+<br>
 
 .grid[
 .kol-1-3.center[
@@ -49,6 +49,8 @@ Illinois
 UCSC SCIPP
 ]
 ]
+<br>
+.center.large[plus more than 20 contributors]
 
 ---
 # Goals of physics analysis at the LHC
