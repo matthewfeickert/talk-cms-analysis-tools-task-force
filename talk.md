@@ -315,8 +315,10 @@ pyhf.set_backend("jax")  # Optional for speed
 
 spec = json.load(open("1Lbb-pallet/BkgOnly.json"))
 patchset = pyhf.PatchSet(json.load(open("1Lbb-pallet/patchset.json")))
+
 workspace = pyhf.Workspace(spec)
 model = workspace.model(patches=[patchset["C1N2_Wh_hbb_900_250"]])
+
 test_pois = np.linspace(0, 5, 41)  # POI step of 0.125
 data = workspace.data(model)
 obs_limit, exp_limits, (test_pois, results) = pyhf.infer.intervals.upperlimit(
@@ -335,7 +337,7 @@ fig.savefig("upper_limit.pdf")
 ```
 ]
 ]
-<br>
+<br><br>
 .kol-2-5[
 .center.width-100[![upper_limit](figures/upper_limit.png)]
 ]
