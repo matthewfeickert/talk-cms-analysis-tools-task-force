@@ -252,110 +252,6 @@ $$
 ]
 
 ---
-# JSON Patch for signal model (reinterpretation)
-<!--  -->
-.center[JSON Patch gives ability to .bold[easily mutate model]]
-.center[Think: test a .bold[new theory] with a .bold[new patch]!]
-.center[(c.f. [Lukas Heinrich's RECAST talk from Snowmass 2021 Computational Frontier Workshop](https://indico.fnal.gov/event/43829/contributions/193817/))]
-<br>
-.center[Combined with RECAST gives powerful tool for .bold[reinterpretation studies]]
-<!--  -->
-.kol-1-5[
-<br>
-<br>
-<br>
-<br>
-.center.width-100[![measurement_cartoon](figures/measurement_cartoon.png)]
-.center[Signal model A]
-]
-.kol-3-5[
-<!-- Using Perl style in Carbon -->
-.center.width-100[![signal_reinterpretation](figures/carbon_reinterpretation.png)]
-]
-.kol-1-5[
-<br>
-<br>
-<br>
-<br>
-.center.width-100[![reinterpretation_cartoon](figures/reinterpretation_cartoon.png)]
-.center[Signal model B]
-]
-
----
-# Likelihoods preserved on HEPData
-
-- `pyhf` pallet:
-   - Background-only model JSON stored
-   - Hundreds of signal model JSON Patches stored together as a [`pyhf` "patch set" file](https://scikit-hep.org/pyhf/_generated/pyhf.patchset.PatchSet.html)
-- Fully preserve and publish the full statistical model and observations to give likelihood
-   - with own DOI! .width-20[[![DOI](https://img.shields.io/badge/DOI-10.17182%2Fhepdata.90607.v3%2Fr3-blue.svg)](https://doi.org/10.17182/hepdata.90607.v3/r3)]
-
-.kol-3-5[
-[.center.width-100[![HEPData_likelihoods](figures/HEPData_likelihoods.png)]](https://www.hepdata.net/record/ins1755298)
-]
-.kol-2-5[
-<br>
-.center.width-85[[![carbon_tree_likelihood_archive](figures/carbon_tree_likelihood_archive.png)](https://www.hepdata.net/record/ins1755298)]
-]
-
----
-# ...can be used from HEPData
-
-- `pyhf` pallet:
-   - Background-only model JSON stored
-   - Hundreds of signal model JSON Patches stored together as a [`pyhf` "patch set" file](https://scikit-hep.org/pyhf/_generated/pyhf.patchset.PatchSet.html)
-- Fully preserve and publish the full statistical model and observations to give likelihood
-   - with own DOI! .width-20[[![DOI](https://img.shields.io/badge/DOI-10.17182%2Fhepdata.90607.v3%2Fr3-blue.svg)](https://doi.org/10.17182/hepdata.90607.v3/r3)]
-
-.center.width-90[![HEPData_streamed_likelihoods](figures/carbon_patchset_example.png)]
-
----
-# Rapid adoption in ATLAS...
-<!--  -->
-.kol-1-3[
-- **18** ATLAS SUSY, Exotics, Top analyses with full probability models published to HEPData
-- ATLAS SUSY will be continuing to publish full Run 2 likelihoods
-]
-.kol-2-3[
-- direct staus, [doi:10.17182/hepdata.89408](https://doi.org/10.17182/hepdata.89408) (2019)
-- sbottom multi-b, [doi:10.17182/hepdata.91127](https://doi.org/10.17182/hepdata.91127) (2019)
-- 1Lbb, [doi:10.17182/hepdata.92006](https://doi.org/10.17182/hepdata.92006) (2019)
-- 3L eRJR, [doi:10.17182/hepdata.90607](https://doi.org/10.17182/hepdata.90607) (2020)
-- ss3L search, [doi:10.17182/hepdata.91214](https://doi.org/10.17182/hepdata.91214) (2020)
-]
-.kol-1-1[
-.kol-1-1[
-.kol-1-2[
-.center.width-70[[![SUSY_EWK_3L_validation](figures/SUSY_RPV_HistFitter.png)](https://indico.cern.ch/event/905793/contributions/3811068/)]
-]
-.kol-1-2[
-.center.width-70[[![SUSY_EWK_3L_validation](figures/SUSY_RPV_pyhf.png)](https://indico.cern.ch/event/905793/contributions/3811068/)]
-]
-]
-.center.smaller[SUSY [EWK 3L RPV](https://atlas.cern/updates/physics-briefing/fantastic-decays-and-where-find-them) analysis ([ATLAS-CONF-2020-009](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2020-009/)): Exclusion curves as a function of mass and branching fraction to $Z$ bosons]
-]
-
----
-# ...and by theory
-
-.kol-1-3[
-- `pyhf` likelihoods discussed in
-   - [Les Houches 2019 Physics at TeV Colliders: New Physics Working Group Report](https://inspirehep.net/literature/1782722)
-   - [Higgs boson potential at colliders: status and perspectives](https://inspirehep.net/literature/1757043)
-- [SModelS](https://smodels.github.io/) team has implemented a `SModelS`/`pyhf` interface [[arXiv:2009.01809](https://inspirehep.net/literature/1814793)]
-   - tool for interpreting simplified-model results from the LHC
-   - designed to be used by theorists
-   - `SModelS` authors giving [tutorial later today](https://indico.cern.ch/event/955391/contributions/4084223/)!
-]
-.kol-2-3[
-.center.width-100[[![sabine_workshop_slide](figures/sabine_workshop_slide.png)](https://inspirehep.net/literature/1814793)]
-.center.smaller[[Feedback on use of public Likelihoods](https://indico.cern.ch/event/957797/contributions/4026032/), Sabine Kraml<br>(ATLAS Exotics + SUSY Reinterpretations Workshop)]
-<!--  -->
-]
-- Have produced three comparisons to published ATLAS likelihoods: [ATLAS-SUSY-2018-04](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-04/), [ATLAS-SUSY-2018-31](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-31/), [ATLAS-SUSY-2019-08](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2019-08/)
-   - Compare simplified likelihood (bestSR) to full likelihood (`pyhf`) using `SModelS`
-
----
 # Extending and visualization: cabinetry
 
 .kol-1-3[
@@ -523,6 +419,110 @@ $$
 - In an "open world" of statistics this is a difficult problem to solve
 - What to preserve and how? All of ROOT?
 - Idea: Focus on a single more tractable binned model first
+
+---
+# JSON Patch for signal model (reinterpretation)
+<!--  -->
+.center[JSON Patch gives ability to .bold[easily mutate model]]
+.center[Think: test a .bold[new theory] with a .bold[new patch]!]
+.center[(c.f. [Lukas Heinrich's RECAST talk from Snowmass 2021 Computational Frontier Workshop](https://indico.fnal.gov/event/43829/contributions/193817/))]
+<br>
+.center[Combined with RECAST gives powerful tool for .bold[reinterpretation studies]]
+<!--  -->
+.kol-1-5[
+<br>
+<br>
+<br>
+<br>
+.center.width-100[![measurement_cartoon](figures/measurement_cartoon.png)]
+.center[Signal model A]
+]
+.kol-3-5[
+<!-- Using Perl style in Carbon -->
+.center.width-100[![signal_reinterpretation](figures/carbon_reinterpretation.png)]
+]
+.kol-1-5[
+<br>
+<br>
+<br>
+<br>
+.center.width-100[![reinterpretation_cartoon](figures/reinterpretation_cartoon.png)]
+.center[Signal model B]
+]
+
+---
+# Likelihoods preserved on HEPData
+
+- `pyhf` pallet:
+   - Background-only model JSON stored
+   - Hundreds of signal model JSON Patches stored together as a [`pyhf` "patch set" file](https://scikit-hep.org/pyhf/_generated/pyhf.patchset.PatchSet.html)
+- Fully preserve and publish the full statistical model and observations to give likelihood
+   - with own DOI! .width-20[[![DOI](https://img.shields.io/badge/DOI-10.17182%2Fhepdata.90607.v3%2Fr3-blue.svg)](https://doi.org/10.17182/hepdata.90607.v3/r3)]
+
+.kol-3-5[
+[.center.width-100[![HEPData_likelihoods](figures/HEPData_likelihoods.png)]](https://www.hepdata.net/record/ins1755298)
+]
+.kol-2-5[
+<br>
+.center.width-85[[![carbon_tree_likelihood_archive](figures/carbon_tree_likelihood_archive.png)](https://www.hepdata.net/record/ins1755298)]
+]
+
+---
+# ...can be used from HEPData
+
+- `pyhf` pallet:
+   - Background-only model JSON stored
+   - Hundreds of signal model JSON Patches stored together as a [`pyhf` "patch set" file](https://scikit-hep.org/pyhf/_generated/pyhf.patchset.PatchSet.html)
+- Fully preserve and publish the full statistical model and observations to give likelihood
+   - with own DOI! .width-20[[![DOI](https://img.shields.io/badge/DOI-10.17182%2Fhepdata.90607.v3%2Fr3-blue.svg)](https://doi.org/10.17182/hepdata.90607.v3/r3)]
+
+.center.width-90[![HEPData_streamed_likelihoods](figures/carbon_patchset_example.png)]
+
+---
+# Rapid adoption in ATLAS...
+<!--  -->
+.kol-1-3[
+- **18** ATLAS SUSY, Exotics, Top analyses with full probability models published to HEPData
+- ATLAS SUSY will be continuing to publish full Run 2 likelihoods
+]
+.kol-2-3[
+- direct staus, [doi:10.17182/hepdata.89408](https://doi.org/10.17182/hepdata.89408) (2019)
+- sbottom multi-b, [doi:10.17182/hepdata.91127](https://doi.org/10.17182/hepdata.91127) (2019)
+- 1Lbb, [doi:10.17182/hepdata.92006](https://doi.org/10.17182/hepdata.92006) (2019)
+- 3L eRJR, [doi:10.17182/hepdata.90607](https://doi.org/10.17182/hepdata.90607) (2020)
+- ss3L search, [doi:10.17182/hepdata.91214](https://doi.org/10.17182/hepdata.91214) (2020)
+]
+.kol-1-1[
+.kol-1-1[
+.kol-1-2[
+.center.width-70[[![SUSY_EWK_3L_validation](figures/SUSY_RPV_HistFitter.png)](https://indico.cern.ch/event/905793/contributions/3811068/)]
+]
+.kol-1-2[
+.center.width-70[[![SUSY_EWK_3L_validation](figures/SUSY_RPV_pyhf.png)](https://indico.cern.ch/event/905793/contributions/3811068/)]
+]
+]
+.center.smaller[SUSY [EWK 3L RPV](https://atlas.cern/updates/physics-briefing/fantastic-decays-and-where-find-them) analysis ([ATLAS-CONF-2020-009](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2020-009/)): Exclusion curves as a function of mass and branching fraction to $Z$ bosons]
+]
+
+---
+# ...and by theory
+
+.kol-1-3[
+- `pyhf` likelihoods discussed in
+   - [Les Houches 2019 Physics at TeV Colliders: New Physics Working Group Report](https://inspirehep.net/literature/1782722)
+   - [Higgs boson potential at colliders: status and perspectives](https://inspirehep.net/literature/1757043)
+- [SModelS](https://smodels.github.io/) team has implemented a `SModelS`/`pyhf` interface [[arXiv:2009.01809](https://inspirehep.net/literature/1814793)]
+   - tool for interpreting simplified-model results from the LHC
+   - designed to be used by theorists
+   - `SModelS` authors giving [tutorial later today](https://indico.cern.ch/event/955391/contributions/4084223/)!
+]
+.kol-2-3[
+.center.width-100[[![sabine_workshop_slide](figures/sabine_workshop_slide.png)](https://inspirehep.net/literature/1814793)]
+.center.smaller[[Feedback on use of public Likelihoods](https://indico.cern.ch/event/957797/contributions/4026032/), Sabine Kraml<br>(ATLAS Exotics + SUSY Reinterpretations Workshop)]
+<!--  -->
+]
+- Have produced three comparisons to published ATLAS likelihoods: [ATLAS-SUSY-2018-04](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-04/), [ATLAS-SUSY-2018-31](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-31/), [ATLAS-SUSY-2019-08](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2019-08/)
+   - Compare simplified likelihood (bestSR) to full likelihood (`pyhf`) using `SModelS`
 
 ---
 # References
