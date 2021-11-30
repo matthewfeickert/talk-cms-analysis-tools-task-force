@@ -10,9 +10,9 @@ count: false
 <br><br>
 [matthew.feickert@cern.ch](mailto:matthew.feickert@cern.ch)
 
-[Tools for High Energy Physics and Cosmology 2020 Workshop](https://indico.cern.ch/event/955391/contributions/4075505/)
+[CMS Analysis Tools Task Force meeting](https://indico.cern.ch/event/XXXXXX/contributions/YYYYYYY/)
 
-November 3rd, 2020
+December 1st, 2021
 
 ---
 # `pyhf` team
