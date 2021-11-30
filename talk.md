@@ -15,6 +15,13 @@ count: false
 December 1st, 2021
 
 ---
+# Talk information
+<br><br>
+
+- 20 minute presentation on pyhf
+- talk scope: an introduction and discussion of backends / interface / project scope. Publishable likelihoods and related stuff [Lindsey] think[s] are for a later time, the feel of this meeting is more to discuss the statistical tools directly.
+
+---
 # `pyhf` team
 
 <br><br>
