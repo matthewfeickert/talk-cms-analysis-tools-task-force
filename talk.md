@@ -269,11 +269,11 @@ $$
 ---
 # Core part of IRIS-HEP Analysis Systems pipeline
 .center[
-.width-75[[![analysis-systems-scope](figures/ecosystem.png)](https://iris-hep.org/as.html)]
+.width-65[[![analysis-systems-scope](figures/ecosystem.png)](https://iris-hep.org/as.html)]
 ]
+- .large[Analysis Systems pipeline: deployable stack of experiment agnostic infrastructure]
+   - c.f. demonstration at [IRIS-HEP Analysis Grand Challenge Tools Workshop 2021](https://indico.cern.ch/event/1076231/contributions/4560405/)
 - .large[Accelerating fitting (reducing time to .bold[insight] (statistical inference)!)] (`pyhf` + `cabinetry`)
-- .large[Flexible schema great for open likelihood .bold[preservation]]
-   - .normal[Likelihood serves as high information-density summary of analysis]
 - .large[An enabling technology for .bold[reinterpretation]] (`pyhf` + RECAST)
 
 ---
