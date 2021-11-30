@@ -306,7 +306,7 @@ $$
 # Rapid adoption in ATLAS...
 <!--  -->
 .kol-1-3[
-- **Five** ATLAS analyses with full likelihoods published to HEPData
+- **18** ATLAS SUSY, Exotics, Top analyses with full probability models published to HEPData
 - ATLAS SUSY will be continuing to publish full Run 2 likelihoods
 ]
 .kol-2-3[
