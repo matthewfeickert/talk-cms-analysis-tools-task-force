@@ -139,7 +139,7 @@ Mathematical grammar for a simultaneous fit with
 .center[.bold[Until 2018] the only implementation of HistFactory has been in [`ROOT`](https://root.cern.ch/)]
 
 .bold[`pyhf`: HistFactory in pure Python]
-.center.width-70[[![pyhf_PyPI](figures/pyhf_PyPI.png)](https://pypi.org/project/pyhf/)]
+.center.width-50[[![pyhf_PyPI](figures/pyhf_PyPI.png)](https://pypi.org/project/pyhf/)]
 
 ---
 # `pyhf`: HistFactory in pure Python
