@@ -82,7 +82,7 @@ Provide constraints on models through setting best limits
 
 - A flexible probability density function (p.d.f.) template to build statistical models in high energy physics
 - Developed in 2011 during work that lead to the Higgs discovery [[CERN-OPEN-2012-016](http://inspirehep.net/record/1236448)]
-- Widely used by the HEP community for .bold[measurements of known physics] (Standard Model) and<br> .bold[searches for new physics] (beyond the Standard Model)
+- Widely used by ATLAS for .bold[measurements of known physics] (Standard Model) and .bold[searches for new physics] (beyond the Standard Model)
 
 .kol-2-5.center[
 .width-90[[![HIGG-2016-25](figures/HIGG-2016-25.png)](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2016-25/)]
@@ -129,7 +129,7 @@ Mathematical grammar for a simultaneous fit with
 - coupled to a set of .red[constraint terms]
 
 .center[.bold[This is a _mathematical_ representation!] Nowhere is any software spec defined]
-.center[.bold[Until now] (2018), the only implementation of HistFactory has been in [`ROOT`](https://root.cern.ch/)]
+.center[.bold[Until 2018] the only implementation of HistFactory has been in [`ROOT`](https://root.cern.ch/)]
 
 .bold[`pyhf`: HistFactory in pure Python]
 .center.width-70[[![pyhf_PyPI](figures/pyhf_PyPI.png)](https://pypi.org/project/pyhf/)]
@@ -152,8 +152,9 @@ Mathematical grammar for a simultaneous fit with
 - Open source tool for all of HEP
    - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
    - Used for reinterpretation in phenomenology paper (DOI: [10.1007/JHEP04(2019)144](https://inspirehep.net/record/1698425)) and `SModelS`
-   - Used in ATLAS SUSY groups and for internal pMSSM SUSY large scale reinterpretation
-   - Maybe your experiment too!
+   - Used in ATLAS SUSY, Exotics, and Top groups
+   - Used by Belle II (DOI: [10.1103/PhysRevLett.127.181802](https://inspirehep.net/literature/1860766))
+   - Keen to make a bridge to CMS!
 ]
 
 ---
@@ -205,14 +206,6 @@ $$
 .center.width-80[![DAG](figures/computational_graph.png)]
 ]
 ]
-
----
-# Tensor backends offer a computational advantage
-
-For visual comparison: the computational graph of the Higgs discovery analysis from the `C++` framework. Image courtesy of Kyle Cranmer.
-
-<br>
-.center.width-100[![Higgs_HistFactory_graph](figures/Higgs_HistFactory_graph.png)]
 
 ---
 # JSON spec fully describes the HistFactory model
@@ -364,21 +357,6 @@ For visual comparison: the computational graph of the Higgs discovery analysis f
 - .large[Flexible schema great for open likelihood .bold[preservation]]
    - .normal[Likelihood serves as high information-density summary of analysis]
 - .large[An enabling technology for .bold[reinterpretation]] (`pyhf` + RECAST)
-
----
-# Use in analysis outside of particle physics
-
-.kol-1-3[
-<br>
-- [Public data](https://fermi.gsfc.nasa.gov/ssc/data/access/) from [Fermi Large Area Telescope (LAT)](https://glast.sites.stanford.edu/) analyzed by L. Heinrich et al.
-- The LAT is a high-energy gamma-ray telescope &mdash; the gamma-ray photons come from extreme cosmological events
-- Can represent the photons counts in the LAT as a binned model
-   - Here full-sky map visualized with [`healpy`](https://healpy.readthedocs.io/en/latest/index.html)'s Mollweide projection
-   - Think: 2d histogram with special binning
-]
-.kol-2-3[
-.center.width-100[![Fermi_LAT](figures/Fermi_LAT.png)]
-]
 
 ---
 # Summary
