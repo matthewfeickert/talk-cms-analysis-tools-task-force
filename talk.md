@@ -359,6 +359,18 @@ $$
 - .large[An enabling technology for .bold[reinterpretation]] (`pyhf` + RECAST)
 
 ---
+# Call for work
+
+.kol-1-2[
+- IRIS-HEP Fellow position
+   - [.bold[A pyhf converter for binned likelihood models in CMS Combine]](https://iris-hep.org/fellow_projects.html)
+]
+.kol-1-2[
+.center.width-100[[![sabine_workshop_slide](figures/IRIS-HEP-fellow-position.png)](https://iris-hep.org/fellow_projects.html)]
+.center.smaller[[.bold[A pyhf converter for binned likelihood models in CMS Combine]](https://iris-hep.org/fellow_projects.html)]
+]
+
+---
 # Summary
 .kol-2-3[
 .large[`pyhf` provides:]
