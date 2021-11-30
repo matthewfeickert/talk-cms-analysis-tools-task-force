@@ -42,7 +42,7 @@ CERN
 Illinois
 ]
 .kol-1-3.center[
-.circle.width-75[![Giordon](figures/collaborators/stark.jpg)]
+.circle.width-75[![Giordon](figures/collaborators/stark.png)]
 
 [Giordon Stark](https://github.com/kratsg)
 
