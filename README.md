@@ -1,6 +1,6 @@
 # [`pyhf`: pure-Python implementation of HistFactory with tensors and automatic differentiation](https://indico.cern.ch/event/955391/contributions/4075505/)
 
-Talk given at the December CMS Analysis Tools Task Force meeting.
+Talk given at the December 2021 [CMS Analysis Tools Task Force meeting](https://indico.cern.ch/event/1100873/).
 
 Viewable online [here](https://matthewfeickert.github.io/talk-cms-analysis-tools-task-force/index.html).
 

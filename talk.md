@@ -10,7 +10,7 @@ count: false
 <br><br>
 [matthew.feickert@cern.ch](mailto:matthew.feickert@cern.ch)
 
-[CMS Analysis Tools Task Force meeting](https://indico.cern.ch/event/XXXXXX/contributions/YYYYYYY/)
+[CMS Analysis Tools Task Force meeting](https://indico.cern.ch/event/1100873/#7-pyhf-status-and-plans)
 
 December 1st, 2021
 
