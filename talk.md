@@ -381,6 +381,29 @@ $$
 - .large[An enabling technology for .bold[reinterpretation]] (`pyhf` + RECAST)
 
 ---
+# Call for work: pyhf and Combine interop
+
+.kol-1-3[
+- Long standing question: Is it possible for Combine users to use pyhf?
+- How to translate between Combine and HistFactory models?
+- Fun fact!: It was actually Lindsey Gray who asked me about this first when I was [presenting at the US LUA 2018 meeting](https://matthewfeickert.github.io/talk-US-LUA-2018/index.html). Thanks Lindesy!
+]
+.kol-2-3[
+.center.width-100[[![combine_github_issue](figures/combine_github_issue.png)](https://github.com/scikit-hep/pyhf/issues/344)]
+]
+
+---
+# Call for work
+
+.kol-1-2[
+- At [publication of statistical models workshop](https://indico.cern.ch/event/1088121/) Andrew Gilbert (CMS Combine team dev) gave suggestions for starting places
+]
+.kol-1-2[
+.center.width-100[[![gilbert_serialising_combine](figures/gilbert_serialising_combine.png)](https://indico.cern.ch/event/1088121/contributions/4575745/)]
+]
+
+
+---
 # Call for work
 
 .kol-1-2[
