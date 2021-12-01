@@ -519,7 +519,7 @@ Fun fact! It was Lindsey Gray who first asked about this possibility when Matthe
    - Unifying tool for theoretical and experimental physicists
 - .large[Project in growing .bold[Pythonic HEP ecosystem]]
    - [Openly developed on GitHub](https://github.com/scikit-hep/pyhf) and welcome contributions
-   - [Comprehensive open tutorials](https://pyhf.github.io/tutorial-ATLAS-SUSY-Exotics-2020/introduction.html)
+   - [Comprehensive open tutorials](https://pyhf.github.io/pyhf-tutorial/)
    - Ask us about Scikit-HEP and IRIS-HEP!
 ]
 .kol-1-3[
