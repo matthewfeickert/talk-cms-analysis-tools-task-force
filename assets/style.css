@@ -42,6 +42,22 @@ body {
     color: #009933;
 }
 
+.obsdata {
+    color: #00a620;
+}
+
+.auxdata {
+    color: #a3130f;
+}
+
+.freepars {
+    color: #0495fc;
+}
+
+.conpars {
+    color: #9c2cfc;
+}
+
 .italic {
     font-style: italic;
 }
