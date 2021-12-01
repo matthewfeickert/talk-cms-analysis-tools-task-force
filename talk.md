@@ -493,13 +493,19 @@ Andrew Gilbert, [Publication of statistical models workshop](https://indico.cern
 
 
 ---
-# Call to action
+# Call to action: Funding for work
 
 .kol-1-2[
-- IRIS-HEP Fellow position
-   - [.bold[A pyhf converter for binned likelihood models in CMS Combine]](https://iris-hep.org/fellow_projects.html)
+<br>
+- Tools useful for the whole particle physics community is core to IRIS-HEP's mission
+   - As an IRIS-HEP supported project pyhf wants to support CMS users
+- IRIS-HEP offers paid (up to 3 FTE-months) Fellow positions
+   - https://iris-hep.org/fellows.html
+- IRIS-HEP Analysis Systems team has a Fellow project for pyhf + Combine open now
+   - Matthew would be a project mentor
 ]
 .kol-1-2[
+<br><br>
 .center.width-100[[![sabine_workshop_slide](figures/IRIS-HEP-fellow-position.png)](https://iris-hep.org/fellow_projects.html)]
 .center.smaller[[.bold[A pyhf converter for binned likelihood models in CMS Combine]](https://iris-hep.org/fellow_projects.html)]
 ]
@@ -507,7 +513,6 @@ Andrew Gilbert, [Publication of statistical models workshop](https://indico.cern
 ---
 # Summary
 .kol-2-3[
-.large[`pyhf` provides:]
 - .large[.bold[Accelerated] fitting library]
    - reducing time to insight/inference!
    - Hardware acceleration on GPUs and vectorized operations
@@ -557,26 +562,6 @@ class: middle
 class: end-slide, center
 
 Backup
-
----
-# HistFactory Template (in more detail)
-
-$$
-f\left(\vec{n}, \vec{a}\middle|\vec{\eta}, \vec{\chi}\right) = \color{blue}{\prod\_{c \\,\in\\, \textrm{channels}} \prod\_{b \\,\in\\, \textrm{bins}\_c} \textrm{Pois} \left(n\_{cb} \middle| \nu\_{cb}\left(\vec{\eta}, \vec{\chi}\right)\right)} \\,\color{red}{\prod\_{\chi \\,\in\\, \vec{\chi}} c\_{\chi} \left(a\_{\chi}\middle|\chi\right)}
-$$
-
-$$
-\nu\_{cb}(\vec{\eta}, \vec{\chi}) = \sum\_{s \\,\in\\, \textrm{samples}} \underbrace{\left(\sum\_{\kappa \\,\in\\, \vec{\kappa}} \kappa\_{scb}(\vec{\eta}, \vec{\chi})\right)}\_{\textrm{multiplicative}} \Bigg(\nu\_{scb}^{0}(\vec{\eta}, \vec{\chi}) + \underbrace{\sum\_{\Delta \\,\in\\, \vec{\Delta}} \Delta\_{scb}(\vec{\eta}, \vec{\chi})}\_{\textrm{additive}}\Bigg)
-$$
-
-.bold[Use:] Multiple disjoint _channels_ (or regions) of binned distributions with multiple _samples_ contributing to each with additional (possibly shared) systematics between sample estimates
-
-.bold[Main pieces:]
-- .blue[Main Poisson p.d.f. for simultaneous measurement of multiple channels]
-- .katex[Event rates] $\nu\_{cb}$ from nominal rate $\nu\_{scb}^{0}$ and rate modifiers $\kappa$ and $\Delta$
-- .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
-   - encoding systematic uncertainties (normalization, shape, etc)
-- $\vec{n}$: events, $\vec{a}$: auxiliary data, $\vec{\eta}$: unconstrained pars, $\vec{\chi}$: constrained pars
 
 ---
 # Why is the likelihood important?
