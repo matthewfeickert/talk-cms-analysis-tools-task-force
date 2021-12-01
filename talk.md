@@ -312,7 +312,7 @@ $$
 ---
 # Large community adoption since 2020
 
-.center.large.bold[Placeholder slide]
+<!-- .center.large.bold[Placeholder slide] -->
 
 .center.width-100[
 [![pyhf_use_placeholder](figures/pyhf_use_placeholder.png)](https://scikit-hep.org/pyhf/citations.html)
