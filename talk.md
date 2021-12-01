@@ -149,15 +149,16 @@ $$
 # HistFactory Template: systematic uncertainties
 
 .kol-4-7[
-- common systematic uncertainties specified with two template histograms
-   - up variation: model prediction for $\theta = +1$
-   - down variation: model prediction for $\theta = -1$
-   - interpolation & extrapolation provides model predictions $\nu$ for any $\vec{\theta}$
-
-- Gaussian constraint terms used to model auxiliary measurements (in most cases)
-   - centered around nuisance parameter (NP)
-   - normalized width ($\sigma=1$) and mean (auxiliary data $a_j = 0$)
-   - penalty for pulling NP away from best-fit auxiliary measurement value
+- In HEP common for systematic uncertainties to be specified with two template histograms: "up" and "down" variation for parameter $\theta \in \\{\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}} \\}$
+   - "up" variation: model prediction for $\theta = +1$
+   - "down" variation: model prediction for $\theta = -1$
+   - Interpolation and extrapolation choices provide .bold[model predictions $\nu(\vec{\theta}\,)$ for any $\vec{\theta}$]
+<!--  -->
+- [Constraint terms](https://pyhf.readthedocs.io/en/v0.6.3/intro.html#id25) $c\_{j} \left(\textcolor{#a3130f}{a\_{j}}\middle|\textcolor{#9c2cfc}{\theta_{j}}\right)$ used to model auxiliary measurements. Example for Normal (most common case):
+   - Mean of nuisance parameter $\textcolor{#9c2cfc}{\theta_{j}}$ with normalized width ($\sigma=1$)
+   - Normal: auxiliary data $\textcolor{#a3130f}{a\_{j} = 0}$ (aux data function of modifier type)
+   - Constraint term produces penalty in likelihood for pulling $\textcolor{#9c2cfc}{\theta_{j}}$ away from auxiliary measurement value
+   - As $\nu(\vec{\theta}\,)$ constraint terms inform rate modifiers (systematic uncertainties) during simulatenous fit
 ]
 .kol-3-7[
 .center.width-70[[![systematics](figures/systematics.png)](https://indico.cern.ch/event/1076231/contributions/4560405/)]
