@@ -324,6 +324,8 @@ $$
 .kol-2-3[
 .center.width-50[[![cabinetry_logo](figures/cabinetry_logo_small.png)](https://github.com/scikit-hep/cabinetry)]
 .center.width-100[[![cabinetry_plots](figures/cabinetry_plots.png)](https://indico.cern.ch/event/1056428/contributions/4523825/)]
+
+.center[Alex Held, [ATLAS SUSY Workshop 2021](https://indico.cern.ch/event/1056428/contributions/4523825/)]
 ]
 
 ---
@@ -481,7 +483,7 @@ Fun fact! It was Lindsey Gray who first asked about this possibility when Matthe
 .kol-1-2[
 <br><br>
 .center.width-100[[![gilbert_serialising_combine](figures/gilbert_serialising_combine.png)](https://indico.cern.ch/event/1088121/contributions/4575745/)]
-Andrew Gilbert, [Publication of statistical models workshop](https://indico.cern.ch/event/1088121/), 2021-11-09
+.center[Andrew Gilbert, <br>[Publication of statistical models workshop 2021](https://indico.cern.ch/event/1088121/)]
 ]
 
 
