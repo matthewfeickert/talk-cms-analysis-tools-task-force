@@ -96,7 +96,7 @@ Provide constraints on models through setting best limits
 ]
 
 ---
-# HistFactory Template
+# HistFactory Template: at a glance
 
 <!-- \definecolor{data}{HTML}{00a620}
 \definecolor{auxdata}{HTML}{a3130f}
@@ -121,7 +121,7 @@ $$
 - .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
 
 ---
-# HistFactory Template
+# HistFactory Template: more detail
 
 <!-- \definecolor{data}{HTML}{00a620}
 \definecolor{auxdata}{HTML}{a3130f}
@@ -146,12 +146,12 @@ $$
 - .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
 
 ---
-# HistFactory Model: Systematic uncertainties
+# HistFactory Template: systematic uncertainties
 
 - Use Alex's slide as a guide https://indico.cern.ch/event/1076231/contributions/4560405/attachments/2338312/3986005/20211103_pyhf_cabinetry_AGC.pdf
 
 ---
-# HistFactory Template
+# HistFactory Template: grammar
 
 $$
 f\left(\textcolor{#00a620}{\vec{n}}, \textcolor{#a3130f}{\vec{a}}\middle|\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right) = \textcolor{blue}{\prod\_{c \\,\in\\, \textrm{channels}} \prod\_{b \\,\in\\, \textrm{bins}\_c} \textrm{Pois} \left(n\_{cb} \middle| \nu\_{cb}\left(\vec{\eta}, \vec{\chi}\right)\right)} \\,\textcolor{red}{\prod\_{\chi \\,\in\\, \vec{\chi}} c\_{\chi} \left(a\_{\chi}\middle|\chi\right)}
@@ -167,7 +167,7 @@ Mathematical grammar for a simultaneous fit with:
 .center[Example: .bold[Each bin] is separate (1-bin) _channel_, each .bold[histogram] (color)<br> is a _sample_ and share a .bold[normalization systematic] uncertainty]
 
 ---
-# HistFactory Template
+# HistFactory Template: implementation
 
 $$
 f\left(\mathrm{data}\middle|\mathrm{parameters}\right) =  f\left(\textcolor{#00a620}{\vec{n}}, \textcolor{#a3130f}{\vec{a}}\middle|\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right) = \prod\_{c \\,\in\\, \textrm{channels}} \prod\_{b \\,\in\\, \textrm{bins}\_c} \textrm{Pois} \left(\textcolor{#00a620}{n\_{cb}} \middle| \nu\_{cb}\left(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right)\right) \\,\prod\_{\chi \\,\in\\, \vec{\chi}} c\_{\chi} \left(\textcolor{#a3130f}{a\_{\chi}}\middle|\textcolor{#9c2cfc}{\chi}\right)
