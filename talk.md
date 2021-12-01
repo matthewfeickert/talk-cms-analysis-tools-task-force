@@ -303,13 +303,12 @@ $$
 ]
 
 ---
-# Large community adoption since 2020
-
+# Large community adoption followed (2020 on)
 <!-- .center.large.bold[Placeholder slide] -->
-
-.center.width-100[
-[![pyhf_use_placeholder](figures/pyhf_use_placeholder.png)](https://scikit-hep.org/pyhf/citations.html)
+.center[
+.width-95[[![community-adoption](figures/community-adoption.svg)](https://scikit-hep.org/pyhf/citations.html)]
 ]
+
 
 ---
 # Extending and visualization: cabinetry
