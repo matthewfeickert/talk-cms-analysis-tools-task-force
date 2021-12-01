@@ -148,7 +148,21 @@ $$
 ---
 # HistFactory Template: systematic uncertainties
 
-- Use Alex's slide as a guide https://indico.cern.ch/event/1076231/contributions/4560405/attachments/2338312/3986005/20211103_pyhf_cabinetry_AGC.pdf
+.kol-4-7[
+- common systematic uncertainties specified with two template histograms
+   - up variation: model prediction for $\theta = +1$
+   - down variation: model prediction for $\theta = -1$
+   - interpolation & extrapolation provides model predictions $\nu$ for any $\vec{\theta}$
+
+- Gaussian constraint terms used to model auxiliary measurements (in most cases)
+   - centered around nuisance parameter (NP)
+   - normalized width ($\sigma=1$) and mean (auxiliary data $a_j = 0$)
+   - penalty for pulling NP away from best-fit auxiliary measurement value
+]
+.kol-3-7[
+.center.width-70[[![systematics](figures/systematics.png)](https://indico.cern.ch/event/1076231/contributions/4560405/)]
+.center[Image credit: [Alex Held](https://indico.cern.ch/event/1076231/contributions/4560405/)]
+]
 
 ---
 # HistFactory Template: grammar
