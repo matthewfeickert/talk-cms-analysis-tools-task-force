@@ -121,7 +121,7 @@ $$
 - .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
 
 ---
-# HistFactory Template: more detail
+# HistFactory Template: at a second glance
 
 <!-- \definecolor{data}{HTML}{00a620}
 \definecolor{auxdata}{HTML}{a3130f}
@@ -322,8 +322,9 @@ $$
 
 .kol-1-3[
 <br>
-- pyhf focuses on the modeling (library not a framework)
-- cabinetry designs & steers template profile likelihood fits
+- .bold[pyhf] focuses on the modeling (library not a framework)
+- Leverage the design of the .bold[Scikit-HEP ecosystem] and close communication between pyhf dev team and cabinetry lead dev Alexander Held
+- .bold[cabinetry] designs & steers template profile likelihood fits
 - Uses pyhf as the inference engine
 - Provides common visualization for inference validation
 ]
@@ -461,19 +462,21 @@ cabinetry.visualize.data_mc(postfit_model, data)
 - .large[An enabling technology for .bold[reinterpretation]] (`pyhf` + RECAST)
 
 ---
-# Call for work: pyhf and Combine interop
+# Call to action: pyhf and Combine interoperability
 
 .kol-1-3[
-- Long standing question: Is it possible for Combine users to use pyhf?
+- Long standing (2018) question: Is it possible for [Combine](https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/) users to use pyhf?
 - How to translate between Combine and HistFactory models?
-- Fun fact!: It was actually Lindsey Gray who asked me about this first when I was [presenting at the US LUA 2018 meeting](https://matthewfeickert.github.io/talk-US-LUA-2018/index.html). Thanks Lindesy!
+- ...or, what is needed in a HistFactory v2 spec to be an acceptable alternative for Combine?
+- The pyhf dev team wants to work to make this happen!
 ]
 .kol-2-3[
 .center.width-100[[![combine_github_issue](figures/combine_github_issue.png)](https://github.com/scikit-hep/pyhf/issues/344)]
+Fun fact! It was Lindsey Gray who first asked about this possibility when Matthew was [presenting at the US LUA 2018 meeting](https://matthewfeickert.github.io/talk-US-LUA-2018/index.html?p=talk.md#1). Thanks Lindesy!
 ]
 
 ---
-# Call for work
+# Call to action
 
 .kol-1-2[
 - At [publication of statistical models workshop](https://indico.cern.ch/event/1088121/) Andrew Gilbert (CMS Combine team dev) gave suggestions for starting places
@@ -484,7 +487,7 @@ cabinetry.visualize.data_mc(postfit_model, data)
 
 
 ---
-# Call for work
+# Call to action
 
 .kol-1-2[
 - IRIS-HEP Fellow position
