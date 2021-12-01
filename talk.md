@@ -476,13 +476,19 @@ Fun fact! It was Lindsey Gray who first asked about this possibility when Matthe
 ]
 
 ---
-# Call to action
+# Call to action: Thoughts from Combine dev team
 
 .kol-1-2[
-- At [publication of statistical models workshop](https://indico.cern.ch/event/1088121/) Andrew Gilbert (CMS Combine team dev) gave suggestions for starting places
+- At November 2021 [publication of statistical models workshop](https://indico.cern.ch/event/1088121/) [Andrew Gilbert](https://github.com/ajgilbert) (CMS Combine team dev) gave suggestions for starting places
+- Recommends that instead of starting from scratch start from Combine Python parser and then work on datacard translator
+- Alex Held has taken some preliminary first steps in the past with a [`datacard-to-pyhf` project on GitHub](https://github.com/alexander-held/datacard-to-pyhf)
+
+.center.width-70[[![datacard-to-pyhf](figures/datacard-to-pyhf.png)](https://github.com/alexander-held/datacard-to-pyhf)]
 ]
 .kol-1-2[
+<br><br>
 .center.width-100[[![gilbert_serialising_combine](figures/gilbert_serialising_combine.png)](https://indico.cern.ch/event/1088121/contributions/4575745/)]
+Andrew Gilbert, [Publication of statistical models workshop](https://indico.cern.ch/event/1088121/), 2021-11-09
 ]
 
 
